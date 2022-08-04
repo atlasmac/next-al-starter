@@ -22,4 +22,10 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          CALENDAR_PRIVATE_KEY: ${{ secrets.CALENDAR_PRIVATE_KEY }}
+          CALENDAR_CLIENT_EMAIL: ${{ secrets.CALENDAR_CLIENT_EMAIL }}
+          CALENDAR_ID: ${{ secrets.CALENDAR_ID }}
+          SHEETS_PRIVATE_KEY: ${{ secrets.SHEETS_PRIVATE_KEY }}
+          SHEETS_CLIENT_EMAIL: ${{ secrets.SHEETS_CLIENT_EMAIL }}
+          SHEETS_ID: ${{ secrets.SHEETS_ID }}
         timeout-minutes: 1
