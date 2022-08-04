@@ -3,21 +3,21 @@ import styles from '../styles/Home.module.css'
 import ArticlesSection from "../components/ArticlesSection"
 import About from "../components/About"
 import PressPhoto from "../components/PressPhoto"
-import { fetchArticles } from '../utils/articles';
+// import { fetchArticles } from '../utils/articles';
 // import { fetchEvents } from '../utils/events';
 import OutsidePhoto from '../public/OutsidePortraitFall21.png'
 import HarmonicaPhoto from '../public/Harmonicaphoto2019.png'
 
-export async function getServerSideProps() {
-  // const events = await fetchEvents()
-  const articles = await fetchArticles()
-  return {
-    props: {
-      events:[],
-      articles
-    }
-  }
-}
+// export async function getServerSideProps() {
+//   // const events = await fetchEvents()
+//   const articles = await fetchArticles()
+//   return {
+//     props: {
+//       events:[],
+//       articles
+//     }
+//   }
+// }
 export default function Press({articles, setShowHeaderLogo, showHeaderLogo}) {
   setShowHeaderLogo(true)
   return (
@@ -29,7 +29,7 @@ export default function Press({articles, setShowHeaderLogo, showHeaderLogo}) {
       </Head>
       <PressPhoto src={OutsidePhoto}/>
       <About />
-      <ArticlesSection articles={articles} />
+      {/* <ArticlesSection articles={articles} /> */}
       <PressPhoto src={HarmonicaPhoto}/>
     </div>
   )
