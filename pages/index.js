@@ -30,7 +30,6 @@ export default function Home({ events, articles, setShowHeaderLogo, showHeaderLo
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Parallax />
-
       <MobileDiv />
       <h1>Test</h1>
       <Spotify />
