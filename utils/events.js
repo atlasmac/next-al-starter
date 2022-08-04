@@ -40,7 +40,7 @@ export async function fetchEvents() {
 
 
   const calendar = google.calendar({ version: "v3", auth });
-  const calendarId = process.env.CALENDAR_ID;
+  const calendarId = "4in937bql7fvbisih5lrii76cc@group.calendar.google.com";
   const timeMin = new Date();
   timeMin.setDate(timeMin.getDate() - 7);
   const eList = await calendar.events.list({ calendarId, timeMin });
