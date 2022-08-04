@@ -8,8 +8,7 @@ export async function fetchArticles() {
       "https://www.googleapis.com/auth/spreadsheets"
     ],
   });
-  console.log(JSON.stringify(process.env, null, 2))
-  console.log(JSON.stringify(process.env, null, 2))
+
   const sheets = google.sheets({ version: "v4", auth });
 
   const spreadsheetId = process.env.SHEETS_ID;
