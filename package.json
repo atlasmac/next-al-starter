@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "rm secrets.json; echo 'foo' >> secrets.json; next build",
     "export": "next export",
     "lint": "next lint"
   },

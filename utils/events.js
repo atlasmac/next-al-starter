@@ -1,6 +1,7 @@
 import { google } from 'googleapis';
 import he from 'he';
 import { htmlToText } from "html-to-text";
+import secrets from "../secrets.json"
 
 
 function formatHrefOnly(elem, walk, builder, formatOptions) {
@@ -32,7 +33,7 @@ export async function fetchEvents() {
       "https://www.googleapis.com/auth/calendar.events",
     ],
   });
-
+  console.log(secrets.a)
   const venueP = /^\s*(venue)\s*:\s*(.*)$/m;
   const linkP = /^\s*(link)\s*:\s*(.*)$/m;
   const desP = /^\s*(description)\s*:\s*(.*)$/m;
