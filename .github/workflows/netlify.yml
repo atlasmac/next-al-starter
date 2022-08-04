@@ -1,33 +1,33 @@
-name: Build and Deploy to Netlify
-on:
-  push:
-  pull_request:
-jobs:
-  build:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
+# name: Build and Deploy to Netlify
+# on:
+#   push:
+#   pull_request:
+# jobs:
+#   build:
+#     runs-on: ubuntu-18.04
+#     steps:
+#       - uses: actions/checkout@v2
 
-      # ( Build to ./dist or other directory... )
-      - run: npm install
-      - run: npm run build --if-present
-      
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
-        with:
-          publish-dir: './'
-          production-branch: master
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          CALENDAR_PRIVATE_KEY: ${{ secrets.CALENDAR_PRIVATE_KEY }}
-          CALENDAR_CLIENT_EMAIL: ${{ secrets.CALENDAR_CLIENT_EMAIL }}
-          CALENDAR_ID: ${{ secrets.CALENDAR_ID }}
-          SHEETS_PRIVATE_KEY: ${{ secrets.SHEETS_PRIVATE_KEY }}
-          SHEETS_CLIENT_EMAIL: ${{ secrets.SHEETS_CLIENT_EMAIL }}
-          SHEETS_ID: ${{ secrets.SHEETS_ID }}
-        timeout-minutes: 1
+#       # ( Build to ./dist or other directory... )
+#       - run: npm install
+#       - run: npm run build --if-present
+
+#       - name: Deploy to Netlify
+#         uses: nwtgck/actions-netlify@v1.2
+#         with:
+#           publish-dir: './'
+#           production-branch: master
+#           deploy-message: "Deploy from GitHub Actions"
+#           enable-pull-request-comment: false
+#           enable-commit-comment: true
+#           overwrites-pull-request-comment: true
+#         env:
+#           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#           CALENDAR_PRIVATE_KEY: ${{ secrets.CALENDAR_PRIVATE_KEY }}
+#           CALENDAR_CLIENT_EMAIL: ${{ secrets.CALENDAR_CLIENT_EMAIL }}
+#           CALENDAR_ID: ${{ secrets.CALENDAR_ID }}
+#           SHEETS_PRIVATE_KEY: ${{ secrets.SHEETS_PRIVATE_KEY }}
+#           SHEETS_CLIENT_EMAIL: ${{ secrets.SHEETS_CLIENT_EMAIL }}
+#           SHEETS_ID: ${{ secrets.SHEETS_ID }}
+#         timeout-minutes: 1
