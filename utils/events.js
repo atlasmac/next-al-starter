@@ -27,13 +27,12 @@ export async function fetchEvents() {
   const auth = new google.auth.JWT({
     email: secrets.CALENDAR_CLIENT_EMAIL || process.env.CALENDAR_CLIENT_EMAIL,
     // email: keys.client_email,
-    key: secrets.CALENDAR_PRIVATE_KEY ||process.env.CALENDAR_PRIVATE_KEY,
+    key: secrets.CALENDAR_PRIVATE_KEY || process.env.CALENDAR_PRIVATE_KEY,
     scopes: [
       "https://www.googleapis.com/auth/calendar",
       "https://www.googleapis.com/auth/calendar.events",
     ],
   });
-  console.log(secrets.a)
   const venueP = /^\s*(venue)\s*:\s*(.*)$/m;
   const linkP = /^\s*(link)\s*:\s*(.*)$/m;
   const desP = /^\s*(description)\s*:\s*(.*)$/m;

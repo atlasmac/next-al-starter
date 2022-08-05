@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm secrets.json; echo 'foo' >> secrets.json; next build",
+    "dev:build": "[ ! -f .env.local ]|| export $(grep -v '^#' .env | xargs); npm run build",
+    "build": "./secrets.sh; next build",
     "export": "next export",
     "lint": "next lint"
   },
