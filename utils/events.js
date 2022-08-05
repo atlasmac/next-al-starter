@@ -25,9 +25,9 @@ function formatHrefOnly(elem, walk, builder, formatOptions) {
 
 export async function fetchEvents() {
   const auth = new google.auth.JWT({
-    email: process.env.CALENDAR_CLIENT_EMAIL,
+    email: secrets.CALENDAR_CLIENT_EMAIL || process.env.CALENDAR_CLIENT_EMAIL,
     // email: keys.client_email,
-    key: process.env.CALENDAR_PRIVATE_KEY,
+    key: secrets.CALENDAR_PRIVATE_KEY ||process.env.CALENDAR_PRIVATE_KEY,
     scopes: [
       "https://www.googleapis.com/auth/calendar",
       "https://www.googleapis.com/auth/calendar.events",
@@ -41,7 +41,7 @@ export async function fetchEvents() {
 
 
   const calendar = google.calendar({ version: "v3", auth });
-  const calendarId = "4in937bql7fvbisih5lrii76cc@group.calendar.google.com";
+  const calendarId = secrets.CALENDAR_ID || process.env.CALENDAR_ID;
   const timeMin = new Date();
   timeMin.setDate(timeMin.getDate() - 7);
   const eList = await calendar.events.list({ calendarId, timeMin });
