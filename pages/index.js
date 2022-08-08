@@ -33,7 +33,6 @@ export default function Home({ events, articles, setShowHeaderLogo, showHeaderLo
       </Head>
       <Parallax />
       <MobileDiv />
-      <h1>Test</h1>
       <Spotify />
       <ShowSection events={events}/>    
     </div>

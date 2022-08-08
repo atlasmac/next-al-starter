@@ -6,7 +6,7 @@ import img from '../public/OutsidePortraitFall21.png'
 
 const PressPhoto = (props) => {
   return (
-    <div className={`${styles.divs} ${styles.pressPhotoDiv}`}>
+    <div className={styles.pressPhotoDiv}>
       <div>
         <div className={styles.pressImg} >
           <Image

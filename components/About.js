@@ -11,7 +11,7 @@ const About = () => {
       <div className={styles.divs} id="about-div">
 
         <div className={styles.titleDiv}>
-          <h2>About</h2>
+          <h2 className={styles.aboutTitle}>About</h2>
         </div>
 
         <p className={styles.about}>Al Maul (Alan Hunter Stensgar-Maul) was born and raised in Western Montana, where he obtained his bachelor&apos;s from the U of M.
