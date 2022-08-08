@@ -327,7 +327,7 @@
 
 /* article/media section */
 .article{
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid black;
 }
 
@@ -343,7 +343,13 @@
   color: rgb(88, 140, 132)
 }
 .artTitle{
+  margin-top: 80px;
   font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+}
+
+.mediaTitle{
+  margin-bottom: 0;
 }
 
 
@@ -452,6 +458,16 @@ width: 80vw;
 .pressKit p{
   margin-top: 0;
 }
+/* shop section */
+.productList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  width: 33.33%;
+  padding-right: 20px;
+}
 
 /* media queries */
 
@@ -460,11 +476,11 @@ width: 80vw;
   .divs{
     width: 60vw;
   }
-  #links-ul{
+  /* #links-ul{
     
   }
   #social-ul{
-  }
+  } */
  
 }
 @media screen and (max-width: 1000px){
@@ -478,11 +494,14 @@ width: 80vw;
   .headerDiv1{
     display: none;
   }
+  
   .dropDiv,
   .dropdown, 
   .hamburger{
     display: block;
-    width: 33.3%;
+  }
+  .dropDiv{
+    width: 33%;
   }
 }
 
@@ -496,7 +515,7 @@ width: 80vw;
  
   .headerName{
     display: block;
-    width: 32vw;
+    width: 100px;
   }
   .name {
     display: block;

@@ -17,7 +17,7 @@ const ArticlesSection = ({ articles }) => {
     <div className={styles.colorDiv}>
       <div className={styles.divs}>
       <div className={styles.titleDiv}>
-        <h2>Media</h2>
+       {articlesSection && <h2 className={styles.mediaTitle}>Media</h2>}
       </div>
         {articlesSection}
       </div>
