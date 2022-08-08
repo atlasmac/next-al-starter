@@ -9,8 +9,6 @@ import Spotify from '../components/Spotify';
 import { fetchEvents } from '../utils/events';
 
 export async function getServerSideProps() {
-  console.log(JSON.stringify(process.env, null, 2))
-  console.error(JSON.stringify(process.env, null, 2))
   const events = await fetchEvents()
   // const articles = await fetchArticles()
   return {
