@@ -1,9 +1,16 @@
+import React from "react";
 import Head from "next/head"
 import ShopComponent from "../components/ShopComponent"
 import products from '../products.json';
+import { useRouter } from 'next/router'
+
+//...
+
+
 
 const Shop = ({ setShowHeaderLogo, showHeaderLogo }) => {
   setShowHeaderLogo(true)
+  const router = useRouter()
   
   return (
     <div>
@@ -18,8 +25,6 @@ const Shop = ({ setShowHeaderLogo, showHeaderLogo }) => {
       <ShopComponent
         products={products}
       />
-      <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
-      <div hidden id="snipcart" data-api-key="YzI2ZGMwYjQtOTM4NS00MWJhLWIyMmMtY2E2NzhjOWY3ZjEzNjM3OTQ5NzgzMDA2MzU4NTUy" style={{ zIndex: 10000000000 }} />
     </div>
   )
 }

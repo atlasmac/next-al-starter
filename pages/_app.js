@@ -27,6 +27,8 @@ function MyApp({ Component, pageProps }) {
         <ContactForm />
       </FormspreeProvider>
       <Footer />
+      <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
+      <div hidden id="snipcart" data-api-key="YzI2ZGMwYjQtOTM4NS00MWJhLWIyMmMtY2E2NzhjOWY3ZjEzNjM3OTQ5NzgzMDA2MzU4NTUy" style={{ zIndex: 10000000000 }} />
     </div>
 
   )
