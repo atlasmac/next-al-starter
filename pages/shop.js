@@ -1,9 +1,16 @@
 import Head from "next/head"
 import ShopComponent from "../components/ShopComponent"
 import products from '../products.json';
+import {useRouter } from "next/router";
+
 
 const Shop = ({ setShowHeaderLogo, showHeaderLogo }) => {
   setShowHeaderLogo(true)
+  const router = useRouter();
+  
+  router.reload();
+
+
   return (
     <div>
       <Head>
