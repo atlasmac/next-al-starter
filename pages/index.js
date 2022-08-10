@@ -26,7 +26,7 @@ export default function Home({ events, articles, setShowHeaderLogo, showHeaderLo
     <div className={styles.container}>
       <Head>
         <title>Al Maul</title>
-        <meta name="description" content="Music by Al Maul" />
+        <meta name="Al Maul Music" content="Music by Al Maul" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Parallax />

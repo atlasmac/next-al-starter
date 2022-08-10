@@ -6,10 +6,6 @@ import Image from 'next/image'
 import nameLogo from '../public/just-name-clear.png'
 import { FiMenu } from 'react-icons/fi'
 
-import { useRouter } from 'next/router'
-
-
-
 const Header = ({ showHeaderLogo }) => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [isLogoActive, setIsLogoActive] = useState(false);
@@ -21,11 +17,6 @@ const Header = ({ showHeaderLogo }) => {
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
-
-  const [click, setClick] = useState(false)
-  
-  const router = useRouter()
-  console.log(router.pathname)
   
 
   return (
