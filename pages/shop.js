@@ -2,7 +2,7 @@ import Head from "next/head"
 import ShopComponent from "../components/ShopComponent"
 import products from '../products.json';
 
-const Shop = ({setShowHeaderLogo, showHeaderLogo}) => {
+const Shop = ({ setShowHeaderLogo, showHeaderLogo }) => {
   setShowHeaderLogo(true)
   return (
     <div>
@@ -14,11 +14,11 @@ const Shop = ({setShowHeaderLogo, showHeaderLogo}) => {
         <link rel="preconnect" href="https://cdn.snipcart.com" />
         <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css" />
       </Head>
-      <ShopComponent 
+      <ShopComponent
         products={products}
       />
-            <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
-      <div hidden id="snipcart" data-api-key="YzI2ZGMwYjQtOTM4NS00MWJhLWIyMmMtY2E2NzhjOWY3ZjEzNjM3OTQ5NzgzMDA2MzU4NTUy" style={{zIndex:10000000000}}/>
+      <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
+      <div hidden id="snipcart" data-api-key="YzI2ZGMwYjQtOTM4NS00MWJhLWIyMmMtY2E2NzhjOWY3ZjEzNjM3OTQ5NzgzMDA2MzU4NTUy" style={{ zIndex: 10000000000 }} />
     </div>
   )
 }

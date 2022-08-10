@@ -18,7 +18,7 @@ export default function ShopComponent({ products }) {
         <p>${product.price}</p>
         <span>
           <button
-            className={`snipcart-add-item ${styles.submitButton}`}
+            className="snipcart-add-item"
             data-item-id={product.id}
             data-item-image={product.img}
             data-item-name={product.title}

@@ -70,8 +70,6 @@
   height: auto;
 }
 
-
-
 .socialUl{
   padding-left: 0;
   margin-bottom: 12px;
@@ -489,7 +487,23 @@ width: 80vw;
 .productDes{
   min-height: 80px;
 }
+.card button {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: .5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+}
 
+.card button:hover {
+  color: white;
+  background-color: #2b2b2b;
+}
 
 /* media queries */
 
