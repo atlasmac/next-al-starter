@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ContactForm from '../components/ContactForm';
 import {useEffect, useState } from 'react';
+import Head from 'next/head';
 
 
 

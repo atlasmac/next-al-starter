@@ -6,6 +6,9 @@ import Image from 'next/image'
 import nameLogo from '../public/just-name-clear.png'
 import { FiMenu } from 'react-icons/fi'
 
+import { useRouter } from 'next/router'
+
+
 
 const Header = ({ showHeaderLogo }) => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
@@ -20,6 +23,10 @@ const Header = ({ showHeaderLogo }) => {
   }, []);
 
   const [click, setClick] = useState(false)
+  
+  const router = useRouter()
+  console.log(router.pathname)
+  
 
   return (
     <header id='header'
