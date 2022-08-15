@@ -37,7 +37,8 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 
-sheetsCredential.json
+calendarCredentials.json
+sheetsCredentials.json
 praxis-window-348018-e6246f6abde0.json
 
 secrets.json
