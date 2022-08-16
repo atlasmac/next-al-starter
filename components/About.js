@@ -40,7 +40,7 @@ const About = () => {
           </button> */}
           <a
             href={noise}
-            download='pic'
+            download='pic.png'
           >
             <h3>test</h3>
             
