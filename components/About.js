@@ -39,7 +39,7 @@ const About = () => {
             Download Press Kit 
           </button> */}
           <a
-            href={noise}
+            href='../public/noise.png'
             download='pic.png'
           >
             <h3>test</h3>
