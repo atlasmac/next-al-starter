@@ -38,13 +38,13 @@ const About = () => {
             <HiDownload />
             Download Press Kit 
           </button> */}
-          <Link 
+          <a
             href={noise}
             download='pic'
           >
             <h3>test</h3>
             
-          </Link>
+          </a>
           <p className={styles.about}>
             The presss kit contains photos, and a .pdf poster.
         </p>
