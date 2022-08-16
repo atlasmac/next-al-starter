@@ -2,9 +2,21 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {HiDownload} from 'react-icons/hi'
+import noise from '../public/noise.png'
+// import axios from 'axios'
+// import fileDownload from 'js-file-download'
+import Link from 'next/link'
 
 
 const About = () => {
+  // const handleClick = (url, filename) => {
+  //   axios.get(url, {
+  //     responseType: 'blob',
+  //   })
+  //   .then((res) => {
+  //     fileDownload(res.data, filename)
+  //   })
+  // }
   return (
     <div>
 
@@ -21,10 +33,18 @@ const About = () => {
            He currently operates out of Missoula, MT and Vail, CO.
         </p>
         <div className={styles.pressKit}>
-          <a href="" className={`${styles.coolLink} ${styles.pressKitLink}`}>
+          {/* <button onClick={() => {() => handleClick({noise}, 'sample.png')}}
+          className={`${styles.coolLink} ${styles.pressKitLink}`}>
             <HiDownload />
-            <h3 >Download Press Kit </h3> 
-          </a>
+            Download Press Kit 
+          </button> */}
+          <Link 
+            href={noise}
+            download='pic'
+          >
+            <h3>test</h3>
+            
+          </Link>
           <p className={styles.about}>
             The presss kit contains photos, and a .pdf poster.
         </p>
