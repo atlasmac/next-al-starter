@@ -17,7 +17,6 @@ const Spotify = () => {
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           >
-
         </iframe>
       </div>
     </div>
