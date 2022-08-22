@@ -9,7 +9,7 @@ const Spotify = () => {
           <h2><a href="#" className={styles.coolLink}>Listen on Spotify</a></h2>
         </div>
         <p>Al Mauls latest release <i>The Wandering</i>.</p>
-        {/* <iframe style={{borderRadius: '12px'}}
+        <iframe style={{borderRadius: '12px'}}
           src="https://open.spotify.com/embed/album/0RwmVLqSpavFhZ93SsSAZn?utm_source=generator"
           width="100%"
           height="380"
@@ -18,7 +18,7 @@ const Spotify = () => {
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           >
 
-        </iframe> */}
+        </iframe>
       </div>
     </div>
   )
