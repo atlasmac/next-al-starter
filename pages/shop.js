@@ -20,9 +20,9 @@ const Shop = ({ setShowHeaderLogo, showHeaderLogo }) => {
         <link rel="preconnect" href="https://cdn.snipcart.com" />
         <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css" />
       </Head>
-      <ShopComponent
+      {/* <ShopComponent
         products={products}
-      />
+      /> */}
     </div>
   )
 }
