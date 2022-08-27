@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../styles/Home.module.css'
-import { FaInstagram, FaSpotify, FaYoutube, FaItunes, FaTiktok } from 'react-icons/fa'
+import { FaShoppingCart, FaInstagram, FaSpotify, FaYoutube, FaItunes, FaTiktok } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
 import nameLogo from '../public/just-name-clear.png'
@@ -17,7 +17,13 @@ const Header = ({ showHeaderLogo }) => {
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
-  
+
+  const [total, setTotal] = useState(0);
+  React.useEffect(() => {
+    if (window.Snipcart) {
+      setTotal(Snipcart.store.getState().cart.total);
+    }
+  });
 
   return (
     <header id='header'
@@ -77,6 +83,8 @@ const Header = ({ showHeaderLogo }) => {
                 <a className={styles.coolLink} >Shop</a>
               </Link>
             </li>
+            <li>
+            </li>
           </ul>
         </div>
 
@@ -119,6 +127,23 @@ const Header = ({ showHeaderLogo }) => {
                   <FaTiktok />
                 </a>
               </Link>
+            </li>
+            <li>
+              <a
+                className="snipcart-checkout snipcart-summary"
+                href="#"
+                style={{ textDecoration: "none" }}
+              >
+                <div>
+                  <FaShoppingCart />
+                  { (total > 0) && < span className={styles.snipcartTotalPrice}>
+                    {new Intl.NumberFormat("en-US", {
+                      style: "currency",
+                      currency: "USD",
+                    }).format(total)}
+                  </span>}
+                </div>
+              </a>
             </li>
           </ul>
         </div>

@@ -507,6 +507,11 @@ width: 80vw;
   background-color: #2b2b2b;
 }
 
+.snipcartTotalPrice{
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
 /* media queries */
 
 @media (min-width: 1300px) {
