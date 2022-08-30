@@ -400,6 +400,32 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+
+.htmlFormGroup input{
+  font-size: 2rem;
+}
+
+.htmlFormGroup fieldset {
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.htmlFormGroup fieldset div{
+  width: 49%;
+}
+
+
+.htmlFormGroup label,
+.fromGroup label {
+  display: block;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
 /* contact message */
 
 .contactMessage{

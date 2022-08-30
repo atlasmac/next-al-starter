@@ -400,29 +400,6 @@ main {
 
 /* form styling */
 
-input{
-  font-size: 2rem;
-}
-
-fieldset {
-  padding: 0;
-  border: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-fieldset div{
-  width: 49%;
-}
-
-
-form label {
-  display: block;
-  align-items: center;
-  font-size: 2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
-}
 
 /* footer */
 

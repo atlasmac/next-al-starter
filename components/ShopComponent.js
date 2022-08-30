@@ -22,7 +22,11 @@ export default function ShopComponent({ products }) {
             data-item-id={product.id}
             data-item-image={product.img}
             data-item-name={product.title}
-            data-item-price={product.price}>Add to Cart</button>
+            data-item-price={product.price}
+            data-item-url={product.url}
+            >
+              Add to Cart
+          </button>
         </span>
       </div>
     );
