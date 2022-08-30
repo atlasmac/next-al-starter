@@ -18,12 +18,12 @@ const Header = ({ showHeaderLogo }) => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  const [total, setTotal] = useState(0);
-  React.useEffect(() => {
-    if (window.Snipcart) {
-      setTotal(Snipcart.store.getState().cart.total);
-    }
-  });
+  // const [total, setTotal] = useState(0);
+  // React.useEffect(() => {
+  //   if (window.Snipcart) {
+  //     setTotal(Snipcart.store.getState().cart.total);
+  //   }
+  // });
 
   return (
     <header id='header'
@@ -136,12 +136,12 @@ const Header = ({ showHeaderLogo }) => {
               >
                 <div>
                   <FaShoppingCart />
-                  { (total > 0) && < span className={styles.snipcartTotalPrice}>
+                  {/* { total > 0 && < span className={styles.snipcartTotalPrice}>
                     {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                     }).format(total)}
-                  </span>}
+                  </span>} */}
                 </div>
               </a>
             </li>
