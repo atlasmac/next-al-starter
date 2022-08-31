@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import ContactForm from '../components/ContactForm';
 import {useEffect, useState } from 'react';
 import Head from 'next/head';
-import secrets from "../secrets.json"
 
 function MyApp({ Component, pageProps }) {
   const [showHeaderLogo, setShowHeaderLogo] = useState(true)
@@ -30,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       </FormspreeProvider>
       <Footer />
       <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js" />
-      <div hidden id="snipcart" data-api-key={secrets.SNIPCART_TEST || process.env.SNIPCART_TEST} style={{ zIndex: 10000000000 }} />
+      <div hidden id="snipcart" data-api-key={"YzI2ZGMwYjQtOTM4NS00MWJhLWIyMmMtY2E2NzhjOWY3ZjEzNjM3OTQ5NzgzMDA2MzU4NTUy"} style={{ zIndex: 10000000000 }} />
     </div>
 
   )
