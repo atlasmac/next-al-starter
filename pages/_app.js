@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import ContactForm from '../components/ContactForm';
 import {useEffect, useState } from 'react';
 import Head from 'next/head';
+import secrets from "../secrets.json"
 
 function MyApp({ Component, pageProps }) {
   const [showHeaderLogo, setShowHeaderLogo] = useState(true)

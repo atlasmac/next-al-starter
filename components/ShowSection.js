@@ -26,11 +26,12 @@ const ShowSection = ({ events }) => {
   return (
     <div className={`${styles.divs} ${styles.showsSection}`} id="shows-section">
       <div className={styles.titleDiv}>
-        <h2>Upcoming Shows</h2>
+      <h2>Upcoming Shows</h2>
       </div>
-        {upComingShows}
-        {!upComingShows && <h3>Please check back soon!</h3>}
+      {upComingShows}
+      {upComingShows.length < 1 && <h3 className={styles.titleDiv}>Please check back soon!</h3>}
     </div>
+
   )
 }
 
