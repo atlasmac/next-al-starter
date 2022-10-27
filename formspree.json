@@ -2,7 +2,7 @@
   "forms": {
     "contactForm": {
       "name": "Contact Form",
-      "actions": [{ "type": "email", "to": "mckinleyatlas@gmail.com" }]
+      "actions": [{ "type": "email", "to": "almaul12@gmail.com" }]
     }
   }
 }
