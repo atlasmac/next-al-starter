@@ -13,20 +13,20 @@ const ShowSection = ({ events }) => {
         <div className={styles.location}>
           <h3 className={styles.date}> {new Date(e.start.dateTime).toLocaleDateString('en-us', { weekday: "long", year: "numeric", month: "short", day: "numeric", hour: "numeric" })}</h3>
           <p className={styles.city}>{e.location} </p>
-          <p id="venue" className={styles.venue}> {e.venue}</p>
-          <p> {e.des}</p>
+          <p id="venue" className={styles.venue}> {e.title}</p>
+          {/* <p> {e.des}</p> */}
         </div>
 
-        <div className={styles.venueInfo}>
+        {/* <div className={styles.venueInfo}>
           <a href={e.link} className={`${styles.coolLink} ${styles.tickets}`}> Venue & Ticket </a>
-        </div>
+        </div> */}
       </div>
     )
   })
   return (
     <div className={`${styles.divs} ${styles.showsSection}`} id="shows-section">
       <div className={styles.titleDiv}>
-      <h2>Upcoming Shows</h2>
+        <h2>Upcoming Shows</h2>
       </div>
       {upComingShows}
       {upComingShows.length < 1 && <h3 className={styles.titleDiv}>Please check back soon!</h3>}
